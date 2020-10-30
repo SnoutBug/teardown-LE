@@ -100,6 +100,7 @@ def addVehicle():
         num = num + 1
     print("_"*10)
     print("What vehicle do you want to add?")
+    print('Eg: "sportscar.xml"')
     i = input("Type the name: ")
     if i in vFiles:
         print('Did you want to select "'+i+'"?')
@@ -168,8 +169,7 @@ def main():
                 addVehicle()
             elif ar == "r":
                 removeVehicle()
-
+print("\n")
 print("Place the objects you want to have in your map inside of the create\custom folder!")
-print("Create a new folder called 'vehicles' and place them there.")
 print("CTRL + C to exit.")
 main()
